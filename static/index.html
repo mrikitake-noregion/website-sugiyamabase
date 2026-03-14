@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sugiyamabase - Creative Coworking in Satoyama</title>
+  <meta name="description" content="福島県会津坂下町の里山に佇むクリエイティブ・コワーキングスペース。自然、手仕事、テクノロジーが混ざり合い、新しい視点が生まれる秘密基地。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar-inner">
+        <a href="#" class="logo">
+          <div class="logo-icon">SB</div>
+          <span class="logo-text">Sugiyamabase</span>
+        </a>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#facilities">Facilities</a>
+          <a href="#events">Events</a>
+          <a href="#works">Works</a>
+          <a href="#access">Access</a>
+          <a href="#access" class="btn btn-primary">内覧予約</a>
+        </div>
+        <button class="mobile-menu-btn" aria-label="メニュー">
+          <svg class="menu-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+          <svg class="close-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none;">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu">
+        <a href="#about">About</a>
+        <a href="#facilities">Facilities</a>
+        <a href="#events">Events</a>
+        <a href="#works">Works</a>
+        <a href="#access">Access</a>
+        <a href="#access" class="btn btn-primary">内覧予約</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-bg">
+        <img src="https://images.unsplash.com/photo-1768947813899-8c5012e9abce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxqYXBhbmVzZSUyMG1vdW50YWluJTIwdmlsbGFnZSUyMGF1dHVtbiUyMGdyZWVufGVufDF8fHx8MTc3MDY4NjQyNHww&ixlib=rb-4.1.0&q=80&w=1080" alt="会津坂下町の里山風景">
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="container hero-content">
+        <div class="hero-grid">
+          <div class="hero-text animate-fade-up">
+            <p class="hero-label">Creative Coworking in Satoyama</p>
+            <h1>里山で、<br><span class="accent">感性</span>が交差する。</h1>
+            <p class="hero-desc">福島県会津坂下町の里山に佇むクリエイティブ・コワーキングスペース。自然、手仕事、テクノロジーが混ざり合い、新しい視点が生まれる秘密基地。</p>
+            <div class="hero-buttons">
+              <a href="#access" class="btn btn-accent">内覧予約はこちら</a>
+              <a href="#about" class="btn btn-outline">もっと知る</a>
+            </div>
+          </div>
+          <div class="hero-image animate-fade-left">
+            <div class="hero-image-wrapper">
+              <img src="https://images.unsplash.com/photo-1766802981801-4b4a9a1d8f1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBjb3dwcmtpbmclMjB3b29kZW4lMjB3b3Jrc3BhY2UlMjBpbnRlcmlvcnxlbnwxfHx8fDE3NzA2ODY0MTh8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Sugiyamabaseのワークスペース">
+            </div>
+            <div class="hero-tag">Est. 2024 / Aizu-Bange, Fukushima</div>
+          </div>
+        </div>
+        <div class="scroll-indicator">
+          <span>Scroll</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="12" y1="5" x2="12" y2="19"></line>
+            <polyline points="19,12 12,19 5,12"></polyline>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- Philosophy Section -->
+    <section id="about" class="philosophy">
+      <div class="container">
+        <div class="philosophy-grid">
+          <div class="philosophy-left animate-on-scroll">
+            <p class="section-label">Philosophy</p>
+            <h2>つくる、伝える、集う。</h2>
+            <p class="philosophy-desc">Sugiyamabaseは、NOREGIONの理念のもと生まれたクリエイティブ・コワーキングスペースです。地域と都市、伝統とテクノロジー、自然と人工物——対立しがちな概念を融合し、まだ誰も見たことのない景色をつくり出す場所を目指しています。</p>
+            <div class="philosophy-image">
+              <img src="https://images.unsplash.com/photo-1760243875588-458d1917c946?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxydXJhbCUyMGphcGFuZXNlJTIwbGFuZHNjYXBlJTIwcmljZSUyMGZpZWxkcyUyMG1vdW50YWluc3xlbnwxfHx8fDE3NzA2ODY0MjV8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="会津坂下町の里山風景">
+            </div>
+          </div>
+          <div class="philosophy-right animate-on-scroll">
+            <div class="pillars">
+              <div class="pillar">
+                <div class="pillar-header">
+                  <span class="pillar-number">01</span>
+                  <div>
+                    <h3>伝える</h3>
+                    <span class="pillar-subtitle">Communicate</span>
+                  </div>
+                </div>
+                <p>里山の暮らしから生まれる知恵と技術を、現代のクリエイティブと掛け合わせて発信する。土地に根ざした物語を、新しいかたちで世界へ届ける拠点。</p>
+              </div>
+              <div class="pillar">
+                <div class="pillar-header">
+                  <span class="pillar-number">02</span>
+                  <div>
+                    <h3>集う</h3>
+                    <span class="pillar-subtitle">Gather</span>
+                  </div>
+                </div>
+                <p>異なる背景を持つ人々が交わり、予期せぬ化学反応が生まれる場所。クリエイター、起業家、地域の人々が自然体で集い、共に新しい価値をつくる。</p>
+              </div>
+            </div>
+            <div class="noregion-badge">
+              <div class="badge-line"></div>
+              <div>
+                <p class="badge-title">Operated by NOREGION</p>
+                <p class="badge-desc">「つくる、伝える、集う」を体現する活動体</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Facilities Section -->
+    <section id="facilities" class="facilities">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Facilities</p>
+          <h2>あなたの「つくる」を支える設備</h2>
+          <p class="section-desc">デジタルからフィジカルまで。多様な創作活動に対応する設備を揃えています。</p>
+        </div>
+        <div class="facilities-grid">
+          <div class="facility-card facility-large">
+            <div class="facility-image">
+              <img src="https://images.unsplash.com/photo-1615374918148-d84197a41396?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsYXB0b3AlMjBkZXNrJTIwd29vZGVuJTIwd2FybSUyMGNvd29ya2luZ3xlbnwxfHx8fDE3NzA2ODY0MjR8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="ワークスペース">
+            </div>
+            <div class="facility-content">
+              <div class="facility-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12.55a11 11 0 0 1 14.08 0"></path>
+                  <path d="M1.42 9a16 16 0 0 1 21.16 0"></path>
+                  <path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path>
+                  <line x1="12" y1="20" x2="12.01" y2="20"></line>
+                </svg>
+              </div>
+              <div class="facility-title-row">
+                <h3>ワークスペース</h3>
+                <span class="facility-subtitle">Workspace</span>
+              </div>
+              <p>高速WiFi完備のデスクスペース。集中できる個人デスクと、コラボレーションに最適な共有テーブルを用意。里山の景色を眺めながらの作業は、都会では得られないインスピレーションを与えてくれます。</p>
+            </div>
+          </div>
+          <div class="facility-card facility-dark">
+            <div class="facility-image">
+              <img src="https://images.unsplash.com/photo-1707735325033-af8b8ad6a01f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHwzRCUyMHByaW50ZXIlMjB3b3Jrc2hvcCUyMG1ha2Vyc3BhY2V8ZW58MXx8fHwxNzcwNjg2NDE5fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="3Dプリンタ">
+            </div>
+            <div class="facility-content">
+              <div class="facility-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="6 9 6 2 18 2 18 9"></polyline>
+                  <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+                  <rect x="6" y="14" width="12" height="8"></rect>
+                </svg>
+              </div>
+              <div class="facility-title-row">
+                <h3>3Dプリンタ</h3>
+                <span class="facility-subtitle">3D Printer</span>
+              </div>
+              <p>プロトタイプ制作やアート作品の造形に。アイデアをすぐに形にできる環境。</p>
+            </div>
+          </div>
+          <div class="facility-card facility-accent">
+            <div class="facility-image facility-image-small">
+              <img src="https://images.unsplash.com/photo-1685320198649-781e83a61de4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3b29kd29ya2luZyUyMHBvd2VyJTIwdG9vbHMlMjB3b3Jrc2hvcHxlbnwxfHx8fDE3NzA2ODY0MTl8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="電動工具">
+            </div>
+            <div class="facility-content">
+              <div class="facility-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                </svg>
+              </div>
+              <div class="facility-title-row">
+                <h3>電動工具</h3>
+                <span class="facility-subtitle">Power Tools</span>
+              </div>
+              <p>木工DIYに必要な工具一式を完備。本格的なものづくりが可能です。</p>
+            </div>
+          </div>
+          <div class="facility-card">
+            <div class="facility-image facility-image-small">
+              <img src="https://images.unsplash.com/photo-1767448068187-5be3cbc848c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlbGVjdHJvbmljcyUyMHNvbGRlcmluZyUyMG1ha2VyJTIwd29ya3Nob3B8ZW58MXx8fHwxNzcwNjg2NDE5fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="電子工作">
+            </div>
+            <div class="facility-content">
+              <div class="facility-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                  <rect x="9" y="9" width="6" height="6"></rect>
+                  <line x1="9" y1="1" x2="9" y2="4"></line>
+                  <line x1="15" y1="1" x2="15" y2="4"></line>
+                  <line x1="9" y1="20" x2="9" y2="23"></line>
+                  <line x1="15" y1="20" x2="15" y2="23"></line>
+                  <line x1="20" y1="9" x2="23" y2="9"></line>
+                  <line x1="20" y1="14" x2="23" y2="14"></line>
+                  <line x1="1" y1="9" x2="4" y2="9"></line>
+                  <line x1="1" y1="14" x2="4" y2="14"></line>
+                </svg>
+              </div>
+              <div class="facility-title-row">
+                <h3>電子工作</h3>
+                <span class="facility-subtitle">Electronics</span>
+              </div>
+              <p>はんだごて、オシロスコープ、Arduino/Raspberry Piなど電子工作環境を整備。</p>
+            </div>
+          </div>
+          <div class="facility-card facility-dark">
+            <div class="facility-image facility-image-small">
+              <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxvcmdhbmljJTIwZ2FyZGVuJTIwdmVnZXRhYmxlcyUyMHJvd3N8ZW58MXx8fHwxNzcwNjg2NDIzfDA&ixlib=rb-4.1.0&q=80&w=1080" alt="畑">
+            </div>
+            <div class="facility-content">
+              <div class="facility-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M7 20h10"></path>
+                  <path d="M10 20c5.5-2.5.8-6.4 3-10"></path>
+                  <path d="M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.5.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8z"></path>
+                  <path d="M14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1-1 1.6-2.3 1.7-4.6-2.7.1-4 1-4.9 2z"></path>
+                </svg>
+              </div>
+              <div class="facility-title-row">
+                <h3>畑</h3>
+                <span class="facility-subtitle">Garden</span>
+              </div>
+              <p>里山の土に触れる体験。季節の野菜づくりを通じて、自然のリズムを感じる。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="events">
+      <div class="container">
+        <div class="events-header">
+          <p class="section-label">Events & Community</p>
+          <div class="events-header-content">
+            <h2>ここから始まる、<br class="hide-mobile">つながり。</h2>
+            <p class="events-desc">季節のイベントや共同プロジェクトを通じて、新しい仲間と出会い、里山ならではの体験を分かち合う。</p>
+          </div>
+        </div>
+        <div class="events-grid">
+          <div class="event-card">
+            <div class="event-image">
+              <img src="https://images.unsplash.com/photo-1759893050474-cff51eb7329b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhcHBsZSUyMGhhcnZlc3QlMjBmZXN0aXZhbCUyMGF1dHVtbnxlbnwxfHx8fDE3NzA2ODY0MjR8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="りんご祭り">
+              <div class="event-tags">
+                <span class="event-tag">季節イベント</span>
+                <span class="event-tag">地域交流</span>
+                <span class="event-tag">ワークショップ</span>
+              </div>
+            </div>
+            <div class="event-content">
+              <div class="event-date">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="16" y1="2" x2="16" y2="6"></line>
+                  <line x1="8" y1="2" x2="8" y2="6"></line>
+                  <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+                <span>毎年10月開催</span>
+              </div>
+              <div class="event-title-row">
+                <h3>りんご祭り</h3>
+                <span class="event-subtitle">Apple Festival</span>
+              </div>
+              <p>会津坂下町の特産・りんごを軸にした秋の収穫祭。地元農家との交流、りんごを使ったクリエイティブワークショップ、マルシェなど、里山の恵みを五感で楽しむイベントです。</p>
+            </div>
+          </div>
+          <div class="event-card">
+            <div class="event-image">
+              <img src="https://images.unsplash.com/photo-1760156789161-453c29817e92?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb21tdW5pdHklMjBmZXN0aXZhbCUyMG91dGRvb3IlMjBnYXRoZXJpbmclMjBqYXBhbmVzZXxlbnwxfHx8fDE3NzA2ODY0MjB8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="共同プロジェクト">
+              <div class="event-tags">
+                <span class="event-tag">共創</span>
+                <span class="event-tag">プロジェクト</span>
+                <span class="event-tag">コミュニティ</span>
+              </div>
+            </div>
+            <div class="event-content">
+              <div class="event-date">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="16" y1="2" x2="16" y2="6"></line>
+                  <line x1="8" y1="2" x2="8" y2="6"></line>
+                  <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+                <span>通年・不定期開催</span>
+              </div>
+              <div class="event-title-row">
+                <h3>共同プロジェクト</h3>
+                <span class="event-subtitle">Collaborative Projects</span>
+              </div>
+              <p>クリエイター同士や地域住民と共に取り組む、ジャンルを超えたプロジェクト。地域課題の解決からアート制作まで、多様な共創の場を提供しています。</p>
+            </div>
+          </div>
+        </div>
+        <div class="upcoming-events">
+          <div class="upcoming-header">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+            <h3>今後のイベント</h3>
+          </div>
+          <div class="upcoming-list">
+            <div class="upcoming-item">
+              <div class="upcoming-info">
+                <span class="upcoming-date">2026.03.15</span>
+                <span class="upcoming-category">Workshop</span>
+                <p>木工ワークショップ — はじめてのスツールづくり</p>
+              </div>
+              <svg class="upcoming-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12,5 19,12 12,19"></polyline>
+              </svg>
+            </div>
+            <div class="upcoming-item">
+              <div class="upcoming-info">
+                <span class="upcoming-date">2026.04.06</span>
+                <span class="upcoming-category">Design</span>
+                <p>里山デザインスプリント vol.3</p>
+              </div>
+              <svg class="upcoming-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12,5 19,12 12,19"></polyline>
+              </svg>
+            </div>
+            <div class="upcoming-item">
+              <div class="upcoming-info">
+                <span class="upcoming-date">2026.04.20</span>
+                <span class="upcoming-category">Tech</span>
+                <p>電子工作ナイト — IoTで畑を見守る</p>
+              </div>
+              <svg class="upcoming-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12,5 19,12 12,19"></polyline>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Works Section -->
+    <section id="works" class="works">
+      <div class="container">
+        <div class="works-header animate-on-scroll">
+          <p class="section-label">Works & Services</p>
+          <div class="works-header-content">
+            <h2>つくることで、<br class="hide-mobile">伝える力になる。</h2>
+            <p class="works-desc">Sugiyamabaseは、オープンスペースとしてだけでなく、デザイン・ブランディング・Web制作・IoTなどのクリエイティブワークを受注しています。地域に寄り添いながら、確かな技術で想いを形にします。</p>
+          </div>
+          <div class="services-tags">
+            <div class="service-tag">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="13.5" cy="6.5" r=".5"></circle>
+                <circle cx="17.5" cy="10.5" r=".5"></circle>
+                <circle cx="8.5" cy="7.5" r=".5"></circle>
+                <circle cx="6.5" cy="12.5" r=".5"></circle>
+                <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.555C21.965 6.012 17.461 2 12 2z"></path>
+              </svg>
+              <span>グラフィックデザイン</span>
+            </div>
+            <div class="service-tag">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+              </svg>
+              <span>Web制作</span>
+            </div>
+            <div class="service-tag">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                <path d="M2 2l7.586 7.586"></path>
+                <circle cx="11" cy="11" r="2"></circle>
+              </svg>
+              <span>ブランディング</span>
+            </div>
+            <div class="service-tag">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="16,18 22,12 16,6"></polyline>
+                <polyline points="8,6 2,12 8,18"></polyline>
+              </svg>
+              <span>システム開発</span>
+            </div>
+            <div class="service-tag">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                <rect x="9" y="9" width="6" height="6"></rect>
+                <line x1="9" y1="1" x2="9" y2="4"></line>
+                <line x1="15" y1="1" x2="15" y2="4"></line>
+                <line x1="9" y1="20" x2="9" y2="23"></line>
+                <line x1="15" y1="20" x2="15" y2="23"></line>
+                <line x1="20" y1="9" x2="23" y2="9"></line>
+                <line x1="20" y1="14" x2="23" y2="14"></line>
+                <line x1="1" y1="9" x2="4" y2="9"></line>
+                <line x1="1" y1="14" x2="4" y2="14"></line>
+              </svg>
+              <span>IoTプロトタイピング</span>
+            </div>
+            <div class="service-tag">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="12,2 2,7 12,12 22,7 12,2"></polygon>
+                <polyline points="2,17 12,22 22,17"></polyline>
+                <polyline points="2,12 12,17 22,12"></polyline>
+              </svg>
+              <span>パッケージデザイン</span>
+            </div>
+          </div>
+        </div>
+        <div class="works-list">
+          <div class="work-card animate-on-scroll">
+            <div class="work-image">
+              <img src="https://images.unsplash.com/photo-1626120032630-b51c96a544f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhcHBsZSUyMGp1aWNlJTIwYm90dGxlJTIwbGFiZWwlMjBkZXNpZ258ZW58MXx8fHwxNzcwNjg3OTE3fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="リンゴジュースラベル">
+              <span class="work-category">パッケージデザイン</span>
+            </div>
+            <div class="work-content">
+              <div class="work-meta">
+                <span class="work-subtitle">Package Design</span>
+                <span class="work-divider"></span>
+                <span class="work-year">2025</span>
+              </div>
+              <h3>リンゴジュースラベル</h3>
+              <p class="work-client">Client: 地元りんご農家</p>
+              <p class="work-desc">会津坂下町産りんごの魅力を伝えるジュースラベルデザイン。里山の四季と手摘みの丁寧さを表現し、産直販売から道の駅まで幅広い販路で手に取られるパッケージに仕上げました。</p>
+              <a href="#" class="work-link">
+                詳しく見る
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7,7 17,7 17,17"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="work-card work-card-reverse animate-on-scroll">
+            <div class="work-image">
+              <img src="https://images.unsplash.com/photo-1744230673231-865d54a0aba4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhZ3JpY3VsdHVyZSUyMGNvcnBvcmF0ZSUyMHdlYnNpdGUlMjBsYXB0b3AlMjBtb2NrdXB8ZW58MXx8fHwxNzcwNjg3OTE4fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="農業法人コーポレートサイト">
+              <span class="work-category">Web制作</span>
+            </div>
+            <div class="work-content">
+              <div class="work-meta">
+                <span class="work-subtitle">Web Design & Development</span>
+                <span class="work-divider"></span>
+                <span class="work-year">2025</span>
+              </div>
+              <h3>農業法人コーポレートサイト</h3>
+              <p class="work-client">Client: 地域農業法人</p>
+              <p class="work-desc">「土地に根ざし、未来を耕す」という理念を体現するコーポレートサイト。ドローン空撮による圃場ビジュアルと、スタッフの声を軸にした構成で、採用と販路拡大の両面を支援。</p>
+              <a href="#" class="work-link">
+                詳しく見る
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7,7 17,7 17,17"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="work-card animate-on-scroll">
+            <div class="work-image">
+              <img src="https://images.unsplash.com/photo-1631208839946-a717f388917a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjYW52YXMlMjB0b3RlJTIwYmFnJTIwbG9nbyUyMGJyYW5kaW5nfGVufDF8fHx8MTc3MDY4NzkxOHww&ixlib=rb-4.1.0&q=80&w=1080" alt="ノベルティトートバッグ">
+              <span class="work-category">ロゴデザイン</span>
+            </div>
+            <div class="work-content">
+              <div class="work-meta">
+                <span class="work-subtitle">Logo & Goods Design</span>
+                <span class="work-divider"></span>
+                <span class="work-year">2024</span>
+              </div>
+              <h3>ノベルティトートバッグ</h3>
+              <p class="work-client">Client: 地域イベント実行委員会</p>
+              <p class="work-desc">地域イベントの記念ノベルティとして制作したトートバッグのロゴデザイン。里山のシルエットとイベントのアイデンティティを融合し、日常使いしたくなるデザインに。</p>
+              <a href="#" class="work-link">
+                詳しく見る
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7,7 17,7 17,17"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="works-cta animate-on-scroll">
+          <div class="works-cta-content">
+            <p class="cta-title">制作のご相談、お気軽にどうぞ。</p>
+            <p class="cta-desc">ブランディング、デザイン、Web、IoTまで。<br class="hide-mobile">地域のことばで、地域の想いを形にします。</p>
+            <a href="mailto:hello@sugiyamabase.jp" class="btn btn-primary">
+              お問い合わせ
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7,7 17,7 17,17"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Instagram Section -->
+    <section class="instagram">
+      <div class="container">
+        <div class="instagram-header animate-on-scroll">
+          <div>
+            <div class="instagram-label">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+              <p class="section-label">Instagram</p>
+            </div>
+            <h2>日々のこと。</h2>
+          </div>
+          <a href="https://www.instagram.com/sugiyamabase/" target="_blank" rel="noopener noreferrer" class="instagram-follow">
+            @sugiyamabase をフォロー
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7,7 17,7 17,17"></polyline>
+            </svg>
+          </a>
+        </div>
+        <div class="instagram-grid">
+          <a href="https://www.instagram.com/sugiyamabase/" target="_blank" rel="noopener noreferrer" class="instagram-post">
+            <img src="https://images.unsplash.com/photo-1707045130951-bc2d9d87126d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxqYXBhbmVzZSUyMGNvdW50cnlzaWRlJTIwd29vZGVuJTIwd29ya3Nob3B8ZW58MXx8fHwxNzcwNjg3OTcyfDA&ixlib=rb-4.1.0&q=80&w=1080" alt="冬の工房">
+            <div class="instagram-overlay">
+              <div class="instagram-stats">
+                <span><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg> 124</span>
+                <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg> 8</span>
+              </div>
+              <p class="instagram-caption">冬の工房。薪ストーブの温もりに包まれながら、黙々と手を動かす時間。</p>
+            </div>
+          </a>
+          <a href="https://www.instagram.com/sugiyamabase/" target="_blank" rel="noopener noreferrer" class="instagram-post">
+            <img src="https://images.unsplash.com/photo-1629380321590-3b3f75d66dec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoYW5kbWFkZSUyMGNyYWZ0JTIwcG90dGVyeSUyMGNlcmFtaWNzfGVufDF8fHx8MTc3MDY4Nzk3M3ww&ixlib=rb-4.1.0&q=80&w=1080" alt="陶芸ワークショップ">
+            <div class="instagram-overlay">
+              <div class="instagram-stats">
+                <span><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg> 203</span>
+                <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg> 15</span>
+              </div>
+              <p class="instagram-caption">陶芸ワークショップ開催しました。土に触れると、頭の中がクリアになる感覚。</p>
+            </div>
+          </a>
+          <a href="https://www.instagram.com/sugiyamabase/" target="_blank" rel="noopener noreferrer" class="instagram-post">
+            <img src="https://images.unsplash.com/photo-1762608206423-be8c07645de7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb3dvcmtpbmclMjBjb21tdW5pdHklMjBnYXRoZXJpbmclMjB0YWJsZXxlbnwxfHx8fDE3NzA2ODc5NzN8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="交流会">
+            <div class="instagram-overlay">
+              <div class="instagram-stats">
+                <span><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg> 178</span>
+                <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg> 22</span>
+              </div>
+              <p class="instagram-caption">月イチの交流会。クリエイター、農家、エンジニアが同じテーブルで語り合う夜。</p>
+            </div>
+          </a>
+          <a href="https://www.instagram.com/sugiyamabase/" target="_blank" rel="noopener noreferrer" class="instagram-post">
+            <img src="https://images.unsplash.com/photo-1636958926605-2016302f4e35?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhdXR1bW4lMjBhcHBsZSUyMGhhcnZlc3QlMjBiYXNrZXR8ZW58MXx8fHwxNzcwNjg3OTc0fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="りんご収穫">
+            <div class="instagram-overlay">
+              <div class="instagram-stats">
+                <span><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg> 312</span>
+                <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg> 31</span>
+              </div>
+              <p class="instagram-caption">りんごの季節。今年も地元農家さんと一緒に収穫。この赤、会津の宝物です。</p>
+            </div>
+          </a>
+          <a href="https://www.instagram.com/sugiyamabase/" target="_blank" rel="noopener noreferrer" class="instagram-post">
+            <img src="https://images.unsplash.com/photo-1641893979088-87d4d9604c36?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3b29kd29ya2luZyUyMGhhbmRtYWRlJTIwZnVybml0dXJlfGVufDF8fHx8MTc3MDY4Nzk3NHww&ixlib=rb-4.1.0&q=80&w=1080" alt="手づくりスツール">
+            <div class="instagram-overlay">
+              <div class="instagram-stats">
+                <span><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg> 156</span>
+                <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg> 12</span>
+              </div>
+              <p class="instagram-caption">手づくりスツール完成。木目の表情ひとつひとつが、この土地の記憶を宿している。</p>
+            </div>
+          </a>
+          <a href="https://www.instagram.com/sugiyamabase/" target="_blank" rel="noopener noreferrer" class="instagram-post">
+            <img src="https://images.unsplash.com/photo-1761052877503-c76a2801ed5b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb3JuaW5nJTIwbWlzdCUyMHJ1cmFsJTIwbW91bnRhaW4lMjBqYXBhbnxlbnwxfHx8fDE3NzA2ODc5NzV8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="朝の里山">
+            <div class="instagram-overlay">
+              <div class="instagram-stats">
+                <span><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg> 267</span>
+                <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg> 19</span>
+              </div>
+              <p class="instagram-caption">早朝の里山。朝霧が晴れていく瞬間、ここにしかない景色が広がる。</p>
+            </div>
+          </a>
+        </div>
+        <div class="instagram-mobile-cta">
+          <a href="https://www.instagram.com/sugiyamabase/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+            Instagramで見る
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="access" class="footer">
+    <div class="footer-cta">
+      <div class="container">
+        <div class="footer-cta-content">
+          <p class="section-label">Visit Us</p>
+          <h2>まずは、見に来てください。</h2>
+          <p class="footer-cta-desc">写真や言葉では伝えきれない空気感があります。里山の風、木の匂い、光の入り方——五感で感じてもらうのが一番です。</p>
+          <a href="mailto:hello@sugiyamabase.jp" class="btn btn-accent">
+            内覧予約をする
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7,7 17,7 17,17"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-info">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25468.5!2d139.82!3d37.56!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8a9c0e0e0e0e0f%3A0x0!2z5Lya5rSl5Z2C5LiL55S6!5e0!3m2!1sja!2sjp!4v1700000000000"
+              width="100%"
+              height="100%"
+              style="border:0; filter: grayscale(30%) contrast(95%);"
+              allowfullscreen
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Sugiyamabaseアクセスマップ">
+            </iframe>
+          </div>
+          <div class="footer-contact">
+            <h3>アクセス情報</h3>
+            <div class="contact-list">
+              <div class="contact-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <div>
+                  <p>〒969-6500</p>
+                  <p>福島県河沼郡会津坂下町</p>
+                  <p class="contact-note">JR只見線 会津坂下駅より車で10分</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12,6 12,12 16,14"></polyline>
+                </svg>
+                <div>
+                  <p>営業時間: 9:00 - 18:00</p>
+                  <p class="contact-note">定休日: 水曜日（イベント時は変動あり）</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <a href="mailto:hello@sugiyamabase.jp">hello@sugiyamabase.jp</a>
+              </div>
+            </div>
+            <div class="social-link">
+              <a href="https://www.instagram.com/sugiyamabase/" target="_blank" rel="noopener noreferrer">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+                <span>@sugiyamabase</span>
+                <svg class="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7,7 17,7 17,17"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="footer-bottom-content">
+          <div class="footer-logo">
+            <div class="logo-icon-small">SB</div>
+            <span>Sugiyamabase</span>
+          </div>
+          <p class="copyright">&copy; 2026 NOREGION Inc. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
