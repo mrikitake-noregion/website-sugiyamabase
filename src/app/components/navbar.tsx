@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
@@ -11,13 +12,15 @@ const navLinks = [
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
+  const isHome = location.pathname === "/";
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-[#FAF8F5]/90 backdrop-blur-md border-b border-border">
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2 group">
+          <Link to="/" className="flex items-center gap-2 group">
             <div className="w-8 h-8 bg-primary rounded-sm flex items-center justify-center">
               <span className="text-primary-foreground text-[11px] tracking-tight" style={{ fontFamily: "'Noto Sans JP', sans-serif" }}>SB</span>
             </div>
@@ -27,11 +30,11 @@ export function Navbar() {
             >
               Sugiyamabase
             </span>
-          </a>
+          </Link>
 
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-8">
-            {navLinks.map((link) => (
+            {isHome && navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
@@ -41,13 +44,22 @@ export function Navbar() {
                 {link.label}
               </a>
             ))}
-            <a
-              href="#access"
-              className="bg-primary text-primary-foreground px-5 py-2 rounded-sm text-[13px] tracking-wide hover:opacity-90 transition-opacity"
-              style={{ fontFamily: "'Noto Sans JP', sans-serif", fontWeight: 500 }}
+            <Link
+              to="/blog"
+              className="text-muted-foreground hover:text-foreground transition-colors text-[13px] tracking-wide"
+              style={{ fontFamily: "'Noto Sans JP', sans-serif", fontWeight: 400 }}
             >
-              内覧予約
-            </a>
+              Blog
+            </Link>
+            {isHome && (
+              <a
+                href="#access"
+                className="bg-primary text-primary-foreground px-5 py-2 rounded-sm text-[13px] tracking-wide hover:opacity-90 transition-opacity"
+                style={{ fontFamily: "'Noto Sans JP', sans-serif", fontWeight: 500 }}
+              >
+                内覧予約
+              </a>
+            )}
           </div>
 
           {/* Mobile Menu Button */}
@@ -63,7 +75,7 @@ export function Navbar() {
         {isOpen && (
           <div className="md:hidden pb-6 pt-2 border-t border-border">
             <div className="flex flex-col gap-4">
-              {navLinks.map((link) => (
+              {isHome && navLinks.map((link) => (
                 <a
                   key={link.href}
                   href={link.href}
@@ -74,14 +86,24 @@ export function Navbar() {
                   {link.label}
                 </a>
               ))}
-              <a
-                href="#access"
-                className="bg-primary text-primary-foreground px-5 py-2.5 rounded-sm text-[14px] text-center tracking-wide hover:opacity-90 transition-opacity mt-2"
-                style={{ fontFamily: "'Noto Sans JP', sans-serif", fontWeight: 500 }}
+              <Link
+                to="/blog"
+                className="text-muted-foreground hover:text-foreground transition-colors text-[14px] py-1"
+                style={{ fontFamily: "'Noto Sans JP', sans-serif" }}
                 onClick={() => setIsOpen(false)}
               >
-                内覧予約
-              </a>
+                Blog
+              </Link>
+              {isHome && (
+                <a
+                  href="#access"
+                  className="bg-primary text-primary-foreground px-5 py-2.5 rounded-sm text-[14px] text-center tracking-wide hover:opacity-90 transition-opacity mt-2"
+                  style={{ fontFamily: "'Noto Sans JP', sans-serif", fontWeight: 500 }}
+                  onClick={() => setIsOpen(false)}
+                >
+                  内覧予約
+                </a>
+              )}
             </div>
           </div>
         )}
